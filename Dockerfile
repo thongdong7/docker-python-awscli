@@ -1,3 +1,3 @@
-FROM python:2.7
+FROM python:2.7-alpine3.7
 
-RUN apt-get update -qq && apt-get install -qqy unzip && pip install awscli
+RUN apk add --no-cache unzip && pip install awscli
